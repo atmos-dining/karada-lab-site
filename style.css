@@ -822,6 +822,7 @@ textarea.form-control { resize: vertical; min-height: 90px; }
 .footer-links a:hover { opacity: 1; color: #b8e4f5; }
 .footer-info { font-size: 12px; opacity: 0.65; line-height: 1.9; }
 .footer-bottom { text-align: center; font-size: 11px; opacity: 0.35; }
+.footer-reserve-sp { display: none; }
 
 /* SP FLOAT */
 .sp-float {
@@ -1028,12 +1029,35 @@ textarea.form-control { resize: vertical; min-height: 90px; }
   .reserve-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
-  #site-footer { padding: 48px 20px 80px; }
+  #site-footer { padding: 48px 20px 32px; }
   .float-cta { display: none; }
   .sp-float { display: flex; }
   .menu-item { grid-template-columns: 1fr; }
   .menu-item-price { text-align: left; }
   .menu-item.featured::before { top: 12px; right: 20px; }
+
+  /* モバイル：トップバーの予約ボタンを非表示 */
+  .topbar-reserve-btn { display: none; }
+
+  /* モバイル：フッター予約ボタン */
+  .footer-reserve-sp {
+    display: block;
+    padding: 24px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+  }
+  .footer-reserve-btn-sp {
+    display: block;
+    background: var(--primary);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: var(--transition);
+  }
+  .footer-reserve-btn-sp:hover { background: var(--primary-dark); color: #fff; }
 }
 
 @media (max-width: 480px) {
