@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>からだととのうラボ 六本松店｜ストレッチ・整体サロン｜福岡市中央区</title>
+  <meta name="description" content="福岡市中央区六本松のストレッチ・整体サロン「からだととのうラボ」。肩こり・腰痛・姿勢改善を専門家が丁寧にケア。ホットペッパーまたはお問い合わせフォームからご予約可能。">
+  <link rel="canonical" href="https://karada-lab.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "からだととのうラボ 六本松店",
+    "description": "ストレッチ・整体サロン。肩こり・腰痛・姿勢改善のプロフェッショナル。",
+    "telephone": "092-791-7320",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "六本松4-2-1",
+      "addressLocality": "中央区",
+      "addressRegion": "福岡市",
+      "postalCode": "810-0044",
+      "addressCountry": "JP"
+    },
+    "openingHours": ["Mo-Sa 10:00-21:00", "Su 10:00-18:00"],
+    "url": "https://karada-lab.com"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===== 固定トップバー ===== -->
+<header id="fixed-topbar" class="fixed-topbar">
+  <div class="topbar-left"></div>
+  <div class="topbar-right">
+    <a href="tel:092-791-7320" class="topbar-tel">tel <strong>092-791-7320</strong></a>
+    <a href="#reserve" class="topbar-reserve-btn">ご予約はこちら <span class="topbar-reserve-arrow">→</span></a>
+  </div>
+</header>
+
+<!-- ハンバーガー：常に最前面・固定 -->
+<button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- ===== ドロワーメニュー（右から） ===== -->
+<nav id="sp-menu" class="drawer-menu" aria-hidden="true">
+  <div class="drawer-inner">
+    <div class="drawer-nav">
+      <a href="#troubles" class="drawer-link"><span class="drawer-en">Troubles</span><span class="drawer-ja">お悩み</span></a>
+      <a href="#features" class="drawer-link"><span class="drawer-en">Features</span><span class="drawer-ja">特徴</span></a>
+      <a href="#menu" class="drawer-link"><span class="drawer-en">Menu</span><span class="drawer-ja">メニュー・料金</span></a>
+      <a href="#staff" class="drawer-link"><span class="drawer-en">Staff</span><span class="drawer-ja">スタッフ</span></a>
+      <a href="#reviews" class="drawer-link"><span class="drawer-en">Reviews</span><span class="drawer-ja">口コミ</span></a>
+      <a href="#access" class="drawer-link"><span class="drawer-en">Access</span><span class="drawer-ja">アクセス</span></a>
+      <a href="#blog" class="drawer-link"><span class="drawer-en">Blog</span><span class="drawer-ja">ブログ</span></a>
+    </div>
+    <div class="drawer-btns">
+      <a href="tel:092-791-7320" class="drawer-btn-tel">📞 092-791-7320</a>
+      <a href="https://beauty.hotpepper.jp/" target="_blank" rel="noopener" class="drawer-btn-hp">🌸 ホットペッパーで予約</a>
+    </div>
+  </div>
+</nav>
+<!-- オーバーレイ -->
+<div id="drawer-overlay" class="drawer-overlay"></div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+
+  <!-- ウォーターマーク：KARADA -->
+  <div class="hero-wm" aria-hidden="true">KARADA</div>
+
+
+  <!-- 左パネル：ロゴ＋ナビ -->
+  <div class="hero-left">
+    <div class="hero-logo-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 4 C10 4 6 10 6 16 C6 22 10 28 16 28 C16 28 26 24 26 16 C26 8 20 4 16 4 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="16" y1="4" x2="16" y2="28" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="hero-logo-name">からだととのうラボ<br>六本松店</div>
+    <div class="hero-logo-en">KARADA LAB<br>ROPPONMATSU</div>
+    <nav class="hero-nav" aria-label="メインナビ">
+      <a href="#troubles">お悩み</a>
+      <a href="#features">特徴</a>
+      <a href="#menu">メニュー</a>
+      <a href="#staff">スタッフ</a>
+      <a href="#reviews">口コミ</a>
+      <a href="#access">アクセス</a>
+      <a href="#blog">ブログ</a>
+    </nav>
+    <div class="hero-tel">
+      TEL<br>
+      <strong><a href="tel:092-791-7320">092-791-7320</a></strong>
+      <small style="display:block;font-size:9px;margin-top:2px;">受付 10:00〜21:00</small>
+    </div>
+    <div class="hero-address">
+      福岡市中央区六本松<br>
+      六本松駅 徒歩5分
+    </div>
+  </div>
+
+  <!-- アーチ画像（中央） -->
+  <div class="hero-arch-wrap">
+    <div class="hero-arch-outer" aria-hidden="true"></div>
+    <div class="hero-arch-inner">
+      <img
+        src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
+        alt="ストレッチサロン施術イメージ"
+        class="hero-arch-img"
+        loading="eager"
+      >
+    </div>
+  </div>
+
+  <!-- 右側：縦書きキャッチコピー（右端から内側へ） -->
+  <div class="hero-copy" aria-label="キャッチコピー">
+    <p class="hero-copy-sub">一人ひとりのお悩みに寄り添い、専門的な知識をもって丁寧にご対応いたします。</p>
+    <div class="hero-copy-divider" aria-hidden="true"></div>
+    <p class="hero-copy-col">からだのこわばりを解いて</p>
+    <p class="hero-copy-col">本来の動きを取り戻す</p>
+  </div>
+
+  <!-- スクロールインジケーター -->
+  <div class="hero-scroll-ind" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    SCROLL
+  </div>
+
+</section>
+
+<!-- ===== STATS ===== -->
+<!-- ===== Hero → Troubles 接続線 ===== -->
+<div class="arch-connector" aria-hidden="true"></div>
+
+<!-- ===== TROUBLES ===== -->
+<section id="troubles">
+  <div class="section-header reveal">
+    <span class="section-en">Troubles</span>
+    <h2 class="section-ja">こんなお悩みはありませんか？</h2>
+    <p class="section-desc">現代人の多くが抱える身体の不調。一人で悩まずにご相談ください。</p>
+  </div>
+  <div class="troubles-grid">
+    <div class="trouble-card reveal">
+      <div class="trouble-icon">🪑</div>
+      <div class="trouble-text">
+        <strong>肩こり・首の張り</strong>
+        <p>デスクワークや長時間のスマホ使用で、首・肩が慢性的にこっている</p>
+      </div>
+    </div>
+    <div class="trouble-card reveal">
+      <div class="trouble-icon">🔩</div>
+      <div class="trouble-text">
+        <strong>腰の重さ・痛み</strong>
+        <p>立ち仕事や姿勢不良で腰がいつも重く、長時間の座位がつらい</p>
+      </div>
+    </div>
+    <div class="trouble-card reveal">
+      <div class="trouble-icon">🚶</div>
+      <div class="trouble-text">
+        <strong>姿勢の崩れ</strong>
+        <p>猫背・骨盤の歪みが気になり、見た目や体幹の弱さを感じている</p>
+      </div>
+    </div>
+    <div class="trouble-card reveal">
+      <div class="trouble-icon">💤</div>
+      <div class="trouble-text">
+        <strong>疲れが抜けない</strong>
+        <p>寝ても疲れが残り、日常的に身体が重くだるい感覚が続く</p>
+      </div>
+    </div>
+    <div class="trouble-card reveal">
+      <div class="trouble-icon">🦵</div>
+      <div class="trouble-text">
+        <strong>脚のむくみ・冷え</strong>
+        <p>夕方になると脚がパンパン、冷えがひどく夜も眠れない</p>
+      </div>
+    </div>
+    <div class="trouble-card reveal">
+      <div class="trouble-icon">⚡</div>
+      <div class="trouble-text">
+        <strong>運動しても改善しない</strong>
+        <p>ジムや整体に通っているのに根本から変わらないと感じている</p>
+      </div>
+    </div>
+  </div>
+  <div class="troubles-cta reveal">
+    <p>まずは一度、私たちにご相談ください</p>
+    <a href="#reserve" class="btn-primary-more">無料カウンセリングを予約する →</a>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section id="features">
+  <div class="section-header reveal">
+    <span class="section-en">Features</span>
+    <h2 class="section-ja">からだととのうラボが<br>選ばれる４つの理由</h2>
+  </div>
+  <div class="features-wrap">
+    <div class="feature-item reveal">
+      <div class="feature-num">01</div>
+      <div class="feature-icon">🎓</div>
+      <div class="feature-title">国家資格を持つ専門スタッフ</div>
+      <div class="feature-desc">柔道整復師・鍼灸師など国家資格を持つスタッフが担当。解剖学・生理学に基づいた施術で根本から改善を目指します。</div>
+    </div>
+    <div class="feature-item reveal">
+      <div class="feature-num">02</div>
+      <div class="feature-icon">📋</div>
+      <div class="feature-title">丁寧なカウンセリング</div>
+      <div class="feature-desc">初回は30分のカウンセリングから。生活習慣・姿勢・お悩みをしっかりヒアリングし、お一人おひとりに合ったプランをご提案します。</div>
+    </div>
+    <div class="feature-item reveal">
+      <div class="feature-num">03</div>
+      <div class="feature-icon">🏠</div>
+      <div class="feature-title">完全個室・プライベート空間</div>
+      <div class="feature-desc">全室個室のプライベート空間。周囲を気にせず、リラックスして施術を受けていただけます。女性お一人でも安心してご来店いただけます。</div>
+    </div>
+    <div class="feature-item reveal">
+      <div class="feature-num">04</div>
+      <div class="feature-icon">🔄</div>
+      <div class="feature-title">セルフケア指導も充実</div>
+      <div class="feature-desc">施術だけでなく、日常でできるストレッチや姿勢改善のアドバイスもご提供。通院間隔の間もご自身でケアができるようサポートします。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section id="menu">
+  <div class="section-header reveal">
+    <span class="section-en">Menu &amp; Price</span>
+    <h2 class="section-ja">メニュー・料金</h2>
+    <p class="section-desc">初回限定割引あり。まずは体験コースからお気軽にどうぞ。</p>
+  </div>
+  <ul class="menu-list">
+    <li class="menu-item featured reveal">
+      <div class="menu-item-body">
+        <div class="menu-item-name">整体×ストレッチ</div>
+        <div class="menu-item-time">⏱ 60分</div>
+        <div class="menu-item-desc">筋肉の硬さと歪みを同時に調整。カウンセリングでお悩みを丁寧にヒアリングし、パーソナルカスタマイズ施術を行います。初回の方に特におすすめ。</div>
+      </div>
+      <div class="menu-item-price">
+        <div class="menu-price-num">¥4,000</div>
+        <div class="menu-price-label">新規限定</div>
+      </div>
+    </li>
+    <li class="menu-item reveal">
+      <div class="menu-item-body">
+        <div class="menu-item-name">整体×ストレッチ</div>
+        <div class="menu-item-time">⏱ 80分</div>
+        <div class="menu-item-desc">全身をじっくりほぐしながら骨格バランスを整えるロングコース。お悩みが複数ある方・しっかりケアしたい方へ。</div>
+      </div>
+      <div class="menu-item-price">
+        <div class="menu-price-num">¥6,000</div>
+        <div class="menu-price-label">新規限定</div>
+      </div>
+    </li>
+    <li class="menu-item reveal">
+      <div class="menu-item-body">
+        <div class="menu-item-name">肩こり改善 整体ストレッチ</div>
+        <div class="menu-item-time">⏱ 40分</div>
+        <div class="menu-item-desc">デスクワーク・スマホ首など、肩こりや首のこわばりに特化した期間限定コース。短時間でスッキリ改善を実感。</div>
+      </div>
+      <div class="menu-item-price">
+        <div class="menu-price-num">¥3,000</div>
+        <div class="menu-price-label">新規限定・期間限定</div>
+      </div>
+    </li>
+    <li class="menu-item reveal">
+      <div class="menu-item-body">
+        <div class="menu-item-name">首肩・背中メンテナンス</div>
+        <div class="menu-item-time">⏱ 20分</div>
+        <div class="menu-item-desc">定期的なメンテナンスに最適なショートコース。隙間時間にからだをリセット。どなたでもご利用いただけます。</div>
+      </div>
+      <div class="menu-item-price">
+        <div class="menu-price-num">¥2,500</div>
+        <div class="menu-price-label">税込</div>
+      </div>
+    </li>
+  </ul>
+  <p class="menu-note">※ 表示価格はすべて税込みです。初回カウンセリング料は無料です。</p>
+</section>
+
+<!-- ===== STAFF ===== -->
+<section id="staff">
+  <div class="section-header reveal">
+    <span class="section-en">Staff</span>
+    <h2 class="section-ja">スタッフ紹介</h2>
+    <p class="section-desc">あなたのからだと真剣に向き合うプロフェッショナル。</p>
+  </div>
+  <div class="staff-grid">
+    <div class="staff-card reveal">
+      <div class="staff-img-wrap">👩‍⚕️</div>
+      <div class="staff-role">整体ストレッチトレーナー</div>
+      <div class="staff-name">小島 唯</div>
+      <div class="staff-exp">施術歴 5年</div>
+      <p class="staff-bio">お悩みに合わせて、部分カスタマイズ施術いたします。一人ひとりのからだの状態を丁寧に確認しながら、最適なアプローチを選択します。</p>
+    </div>
+    <div class="staff-card reveal">
+      <div class="staff-img-wrap">🧑‍⚕️</div>
+      <div class="staff-role">ストレッチトレーナー</div>
+      <div class="staff-name">藤岡</div>
+      <div class="staff-exp">施術歴 8年</div>
+      <p class="staff-bio">お客様に合わせて施術を行います。豊富な経験をもとに、筋肉の硬さや歪みにアプローチし、からだ本来の動きを取り戻すサポートをいたします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+  <div class="section-header reveal">
+    <span class="section-en">Reviews</span>
+    <h2 class="section-ja">お客様の声</h2>
+  </div>
+  <div class="reviews-header-wrap reveal">
+    <div class="reviews-rating-big">
+      <div class="rating-big-num">4.9</div>
+      <div class="rating-big-stars">★★★★★</div>
+      <div class="rating-big-count">Google 口コミ</div>
+    </div>
+    <div>
+      <p style="font-family:var(--font-serif);font-size:18px;font-weight:700;margin-bottom:12px;">多くのお客様に喜んでいただいています</p>
+      <p style="font-size:13px;color:var(--text-mid);line-height:2;">「また来たい」と思っていただけるサロンを目指して、一人ひとりに丁寧に向き合っています。</p>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">肩こりがひどくて何か所かのサロンを試しましたが、こちらが一番効果を実感しました。施術後は肩が別物のように軽くなって驚きです！</p>
+      <div class="review-author">30代 女性 / デスクワーク</div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">産後の骨盤ケアでお世話になっています。佐藤先生が丁寧にカウンセリングしてくださり、体の変化を実感しながら通えています。</p>
+      <div class="review-author">20代 女性 / 産後ケア</div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">腰痛持ちで整形外科に通っていましたが、こちらで整体も組み合わせたところ格段に楽になりました。セルフケアも教えていただけて助かります。</p>
+      <div class="review-author">40代 男性 / 腰痛改善</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-num">4.9<span>★</span></div>
+      <div class="stat-label">Google 評価</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">500<span>+</span></div>
+      <div class="stat-label">累計来店数</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">10<span>年+</span></div>
+      <div class="stat-label">施術経験</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">95<span>%</span></div>
+      <div class="stat-label">リピート率</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCESS ===== -->
+<section id="access">
+  <div class="section-header reveal">
+    <span class="section-en">Access</span>
+    <h2 class="section-ja">アクセス</h2>
+  </div>
+  <div class="access-grid">
+    <div class="access-info reveal">
+      <div class="access-rows">
+        <div class="access-row">
+          <div class="access-row-icon">🏪</div>
+          <div>
+            <div class="access-row-label">店舗名</div>
+            <div class="access-row-text">からだととのうラボ 六本松店</div>
+          </div>
+        </div>
+        <div class="access-row">
+          <div class="access-row-icon">📍</div>
+          <div>
+            <div class="access-row-label">住所</div>
+            <div class="access-row-text">福岡市中央区六本松4-2-1<br><span style="font-size:12px;color:var(--text-light);">六本松駅 徒歩約5分</span></div>
+          </div>
+        </div>
+        <div class="access-row">
+          <div class="access-row-icon">📞</div>
+          <div>
+            <div class="access-row-label">電話番号</div>
+            <div class="access-row-text"><a href="tel:092-791-7320" style="color:var(--primary);font-weight:700;">092-791-7320</a></div>
+          </div>
+        </div>
+        <div class="access-row">
+          <div class="access-row-icon">🕐</div>
+          <div>
+            <div class="access-row-label">営業時間</div>
+            <table class="hours-table">
+              <tr><td>月〜土</td><td>10:00 〜 21:00</td></tr>
+              <tr><td>日曜</td><td>10:00 〜 18:00</td></tr>
+              <tr><td>定休日</td><td>不定休（要確認）</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="access-row">
+          <div class="access-row-icon">🚇</div>
+          <div>
+            <div class="access-row-label">アクセス</div>
+            <div class="access-row-text">福岡市地下鉄七隈線「六本松駅」3番出口より徒歩約5分</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="access-map reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.1090384470513!2d130.3736128756963!3d33.57651807333974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541933760547f25%3A0xccb1bbe947074aa5!2z44GL44KJ44Gg44Go44Go44Gu44GG44Op44Oc!5e0!3m2!1sja!2sjp!4v1782714313825!5m2!1sja!2sjp"
+        width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin" title="からだととのうラボ 六本松店 地図">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVE ===== -->
+<section id="reserve">
+  <div class="section-header reveal">
+    <span class="section-en">Reserve</span>
+    <h2 class="section-ja">ご予約</h2>
+    <p class="section-desc">24時間いつでもオンラインでご予約いただけます。</p>
+  </div>
+  <div class="reserve-simple reveal">
+    <a href="https://beauty.hotpepper.jp/" target="_blank" rel="noopener" class="reserve-simple-btn">
+      ご予約はこちら →
+    </a>
+    <p class="reserve-simple-tel">お電話でのご予約：<a href="tel:092-791-7320">092-791-7320</a>　受付 10:00〜21:00</p>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog">
+  <div class="section-header reveal">
+    <span class="section-en">Blog</span>
+    <h2 class="section-ja">ブログ</h2>
+    <p class="section-desc">身体のこと、健康情報、サロンのお知らせを発信しています。</p>
+  </div>
+  <div class="blog-grid" id="blog-list">
+    <div style="grid-column:1/-1;text-align:center;color:var(--text-light);padding:40px;">
+      <p>ブログ記事を準備中です</p>
+    </div>
+  </div>
+  <div style="text-align:center;">
+    <a href="/blog/" class="btn-more">すべての記事を見る →</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">からだととのうラボ 六本松店</div>
+      <p class="footer-catch">ストレッチ・整体サロン<br>からだのこわばりを解いて、本来の動きを取り戻す</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#troubles">お悩み</a></li>
+        <li><a href="#features">特徴</a></li>
+        <li><a href="#menu">メニュー・料金</a></li>
+        <li><a href="#staff">スタッフ</a></li>
+        <li><a href="#reviews">口コミ</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="/blog/">ブログ</a></li>
+        <li><a href="/admin/">管理画面</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Info</div>
+      <div class="footer-info">
+        福岡市中央区六本松4-2-1<br>
+        <a href="tel:092-791-7320" style="color:#b8e4f5;">092-791-7320</a><br>
+        月〜土 10:00〜21:00<br>
+        日曜 10:00〜18:00
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 からだととのうラボ All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- ページトップ -->
+<button id="page-top" aria-label="ページトップへ戻る">↑</button>
+
+<script src="common.js"></script>
+</body>
+</html>

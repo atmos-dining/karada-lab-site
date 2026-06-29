@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ブログ｜からだととのうラボ 六本松店</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    .post-hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: var(--white);
+      padding: 120px 0 48px;
+    }
+    .post-breadcrumb {
+      font-size: 13px;
+      opacity: 0.7;
+      margin-bottom: 16px;
+    }
+    .post-breadcrumb a { color: var(--white); }
+    .post-hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(22px, 3.5vw, 34px);
+      font-weight: 700;
+      line-height: 1.45;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .post-meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      opacity: 0.75;
+    }
+    .post-tag {
+      background: rgba(255,255,255,0.2);
+      border-radius: 50px;
+      padding: 2px 12px;
+      font-size: 12px;
+    }
+    .post-main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+    .post-img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      margin-bottom: 40px;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+    .post-body {
+      font-size: 16px;
+      line-height: 2;
+      color: var(--text);
+    }
+    .post-body h2 {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin: 40px 0 16px;
+      padding-left: 16px;
+      border-left: 4px solid var(--primary);
+    }
+    .post-body h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 28px 0 12px;
+    }
+    .post-body p { margin-bottom: 20px; }
+    .post-body ul, .post-body ol {
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+    .post-body li { margin-bottom: 8px; }
+    .post-body strong { color: var(--primary-dark); }
+    .post-body img { max-width: 100%; border-radius: var(--radius); margin: 16px 0; }
+    .post-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 32px 24px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+    }
+    .post-cta {
+      background: var(--off-white);
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .post-cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .post-cta h3 {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .post-cta p {
+      color: var(--text-light);
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    .post-cta-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 2.74 1.53 5.12 3.78 6.39L8 21h8l-.78-5.61C17.47 14.12 19 11.74 19 9c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-name">からだととのうラボ</div>
+        <div class="logo-sub">六本松店 | Stretch &amp; Seitai</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="/#troubles">お悩み</a>
+      <a href="/#features">特徴</a>
+      <a href="/#menu">メニュー</a>
+      <a href="/#staff">スタッフ</a>
+      <a href="/#access">アクセス</a>
+      <a href="/blog/" style="color:var(--primary);">ブログ</a>
+    </nav>
+    <div class="header-reserve">
+      <a href="/#reserve" class="btn btn-primary">ご予約</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<div class="sp-menu" id="sp-menu">
+  <button class="sp-close" id="sp-close">×</button>
+  <a href="/#troubles" class="sp-link">お悩みの方へ</a>
+  <a href="/#features" class="sp-link">当店の特徴</a>
+  <a href="/#menu" class="sp-link">メニュー・料金</a>
+  <a href="/#staff" class="sp-link">スタッフ紹介</a>
+  <a href="/#access" class="sp-link">アクセス</a>
+  <a href="/blog/" class="sp-link">ブログ</a>
+  <div class="sp-menu-btns">
+    <a href="https://beauty.hotpepper.jp/kr/slnH000606130/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="justify-content:center;">ホットペッパーで予約</a>
+  </div>
+</div>
+
+<div class="post-hero" id="post-hero">
+  <div class="container">
+    <div class="post-breadcrumb">
+      <a href="/">トップ</a> &gt; <a href="/blog/">ブログ</a> &gt; <span id="bc-title">記事</span>
+    </div>
+    <h1 class="post-hero-title" id="post-title">読み込み中...</h1>
+    <div class="post-meta">
+      <span id="post-date"></span>
+      <span id="post-tags"></span>
+    </div>
+  </div>
+</div>
+
+<article class="post-main">
+  <img id="post-img" class="post-img" src="" alt="" style="display:none;">
+  <div class="post-body" id="post-body"></div>
+</article>
+
+<div class="post-nav">
+  <a href="/blog/" class="btn btn-outline">← ブログ一覧へ</a>
+  <a href="/#reserve" class="btn btn-primary">ご予約はこちら</a>
+</div>
+
+<div class="post-cta">
+  <div class="post-cta-inner">
+    <h3>体のお悩み、一度ご相談ください</h3>
+    <p>六本松駅から徒歩2分。整体×ストレッチで、肩こり・腰痛・姿勢のお悩みを根本から改善します。</p>
+    <div class="post-cta-btns">
+      <a href="https://beauty.hotpepper.jp/kr/slnH000606130/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">ホットペッパーで予約</a>
+      <a href="/#reserve" class="btn btn-outline btn-lg">お問い合わせ</a>
+    </div>
+  </div>
+</div>
+
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark" style="border-color:#5aabcc;">
+            <svg viewBox="0 0 24 24" style="fill:#5aabcc;">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 2.74 1.53 5.12 3.78 6.39L8 21h8l-.78-5.61C17.47 14.12 19 11.74 19 9c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-name">からだととのうラボ</div>
+            <div class="logo-sub">六本松店</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">MENU</div>
+        <div class="footer-links">
+          <a href="/">トップページ</a>
+          <a href="/#menu">メニュー・料金</a>
+          <a href="/#access">アクセス</a>
+          <a href="/blog/">ブログ</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">INFO</div>
+        <div class="footer-info">
+          <div>福岡市中央区六本松４－９－７</div>
+          <div>七隈線 六本松駅 徒歩2分</div>
+          <div>平日 11:00〜22:00 / 土日祝 10:00〜21:00</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 からだととのうラボ 六本松店. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="page-top" aria-label="ページトップへ">↑</button>
+
+<script>
+function esc(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('scroll', () => {
+    document.getElementById('site-header')?.classList.toggle('scrolled', window.scrollY > 40);
+    document.getElementById('page-top')?.classList.toggle('visible', window.scrollY > 300);
+  });
+  document.getElementById('page-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.getElementById('hamburger')?.addEventListener('click', () => document.getElementById('sp-menu')?.classList.add('open'));
+  document.getElementById('sp-close')?.addEventListener('click', () => document.getElementById('sp-menu')?.classList.remove('open'));
+  document.querySelectorAll('.sp-link').forEach(l => l.addEventListener('click', () => document.getElementById('sp-menu')?.classList.remove('open')));
+
+  const slug = new URLSearchParams(location.search).get('slug');
+  if (!slug) { document.getElementById('post-title').textContent = '記事が見つかりません'; return; }
+
+  fetch('/blog/posts.json')
+    .then(r => r.json())
+    .then(data => {
+      const post = (data.posts || []).find(p => p.slug === slug);
+      if (!post) { document.getElementById('post-title').textContent = '記事が見つかりません'; return; }
+
+      document.title = `${post.title}｜からだととのうラボ 六本松店`;
+      document.querySelector('meta[name="description"]').setAttribute('content', post.excerpt || '');
+      document.getElementById('post-title').textContent = post.title;
+      document.getElementById('bc-title').textContent = post.title;
+      document.getElementById('post-date').textContent = post.date || '';
+      if (post.tags?.length) {
+        document.getElementById('post-tags').innerHTML = post.tags.map(t => `<span class="post-tag">${esc(t)}</span>`).join(' ');
+      }
+
+      if (post.image) {
+        let imgSrc = post.image.replace(/^\.\//, '../').replace(/^\.\.\//, '../../');
+        const img = document.getElementById('post-img');
+        img.src = imgSrc;
+        img.alt = post.title;
+        img.style.display = 'block';
+      }
+
+      const rawBody = post.body || `<p>${esc(post.excerpt)}</p>`;
+      const bodyHtml = (typeof marked !== 'undefined' && !rawBody.trimStart().startsWith('<'))
+        ? marked.parse(rawBody)
+        : rawBody;
+      document.getElementById('post-body').innerHTML = bodyHtml;
+    })
+    .catch(() => {
+      document.getElementById('post-title').textContent = '記事の読み込みに失敗しました';
+    });
+});
+</script>
+</body>
+</html>
