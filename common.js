@@ -17,6 +17,8 @@ function openMenu() {
   if (hamburger) { hamburger.classList.add('open'); hamburger.setAttribute('aria-expanded', 'true'); }
   if (overlay) overlay.classList.add('visible');
   document.body.style.overflow = 'hidden';
+  const fixedBtn = document.querySelector('.sp-reserve-fixed');
+  if (fixedBtn) fixedBtn.style.display = 'none';
 }
 
 function closeMenu() {
@@ -24,6 +26,8 @@ function closeMenu() {
   if (hamburger) { hamburger.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); }
   if (overlay) overlay.classList.remove('visible');
   document.body.style.overflow = '';
+  const fixedBtn = document.querySelector('.sp-reserve-fixed');
+  if (fixedBtn) fixedBtn.style.display = '';
 }
 
 if (hamburger) hamburger.addEventListener('click', () => {
