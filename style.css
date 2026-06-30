@@ -1043,23 +1043,16 @@ textarea.form-control { resize: vertical; min-height: 90px; }
     text-decoration: none;
   }
   .topbar-logo {
-    height: 36px;
+    height: 44px;
     width: auto;
     display: block;
     flex-shrink: 0;
   }
-  .topbar-brand-name {
-    font-family: var(--font-serif);
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--primary-dark);
-    letter-spacing: 0.06em;
-    line-height: 1.5;
-  }
-  .topbar-brand-name small {
-    font-size: 10px;
-    font-weight: 400;
-    color: var(--text-mid);
+  .topbar-logo2 {
+    height: 32px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
   }
 
   /* モバイル：画面下固定の予約ボタン */
