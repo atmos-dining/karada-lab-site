@@ -430,7 +430,8 @@ ul { list-style: none; }
 .topbar-left {
   flex: 1;
 }
-.topbar-logo { height: 40px; width: auto; display: block; }
+/* デスクトップではブランドエリア非表示 */
+.topbar-brand { display: none; }
 
 .topbar-tel {
   font-size: 11px;
@@ -1032,8 +1033,34 @@ textarea.form-control { resize: vertical; min-height: 90px; }
   .menu-item-price { text-align: left; }
   .menu-item.featured::before { top: 12px; right: 20px; }
 
-  /* モバイル：トップバーの予約ボタンを非表示 */
+  /* モバイル：予約ボタン・電話番号を非表示、ブランドを表示 */
   .topbar-reserve-btn { display: none; }
+  .topbar-tel { display: none; }
+  .topbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .topbar-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+  }
+  .topbar-brand-name {
+    font-family: var(--font-serif);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+  }
+  .topbar-brand-name small {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-mid);
+  }
 
   /* モバイル：画面下固定の予約ボタン */
   @keyframes sp-btn-shimmer {
