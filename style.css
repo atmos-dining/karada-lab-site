@@ -436,8 +436,8 @@ ul { list-style: none; }
 
 .topbar-left {
   flex: 1;
-  /* 左側は空白スペース */
 }
+.topbar-logo { height: 40px; width: auto; display: block; }
 
 .topbar-tel {
   font-size: 11px;
