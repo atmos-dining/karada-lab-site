@@ -186,6 +186,17 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 
+.hero-logo-name {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-align: center;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
 .hero-logo-en {
   font-size: 9px;
   color: var(--text-light);
