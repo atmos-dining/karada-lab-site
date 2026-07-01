@@ -1156,3 +1156,9 @@ textarea.form-control { resize: vertical; min-height: 90px; }
   .hero-arch-wrap { width: 80vw !important; max-width: 300px !important; }
   .hero-copy-col { font-size: clamp(16px, 5.5vw, 22px); }
 }
+
+/* スマホのみ改行 */
+.sp-br { display: none; }
+@media (max-width: 860px) {
+  .sp-br { display: block; }
+}
