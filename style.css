@@ -1059,6 +1059,7 @@ textarea.form-control { resize: vertical; min-height: 90px; }
 
   /* その他グリッド系 */
   .features-wrap { grid-template-columns: 1fr; }
+  .feature-item { border: none; }
   .troubles-grid { grid-template-columns: 1fr 1fr; }
   .staff-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
