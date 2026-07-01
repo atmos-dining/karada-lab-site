@@ -74,9 +74,7 @@ function loadBlogPreview() {
         return;
       }
       list.innerHTML = posts.map(p => {
-        const imgSrc = p.image
-          ? p.image.replace(/^\.\.\/\.\.\//, '')
-          : '';
+        const imgSrc = p.image || '';
         const imgEl = imgSrc
           ? `<img src="${imgSrc}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
           : `<div class="blog-card-img">📝</div>`;

@@ -1,181 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>スタッフブログ｜からだととのうラボ 六本松店</title>
-  <meta name="description" content="からだととのうラボ 六本松店のスタッフブログ。ストレッチや整体に関する豆知識、サロンのお知らせをお届けします。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <style>
-    .blog-hero {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-      color: var(--white);
-      padding: 120px 0 60px;
-      text-align: center;
-    }
-    .blog-hero .section-label { color: rgba(255,255,255,0.8); }
-    .blog-hero .section-title { color: var(--white); font-size: clamp(28px, 4vw, 40px); }
-    .blog-main { padding: 64px 0 80px; background: var(--off-white); }
-    .blog-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    @media (max-width: 900px) { .blog-list { grid-template-columns: 1fr; } }
-  </style>
+<meta charset="UTF-8">
+<title>スタッフブログ｜からだととのうラボ 六本松店</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="からだととのうラボ 六本松店のスタッフブログ。ストレッチや整体に関する豆知識、サロンのお知らせをお届けします。">
+<link rel="icon" href="../images/favicon2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .blog-page-hero {
+    padding: 100px 0 48px;
+    text-align: center;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+  }
+  .blog-page-main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  .blog-all-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  @media (max-width: 860px) {
+    .blog-all-grid { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
 
-<header id="site-header">
-  <div class="header-inner">
-    <a href="/" class="logo">
-      <div class="logo-mark">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 2.74 1.53 5.12 3.78 6.39L8 21h8l-.78-5.61C17.47 14.12 19 11.74 19 9c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z"/>
-        </svg>
-      </div>
-      <div class="logo-text">
-        <div class="logo-name">からだととのうラボ</div>
-        <div class="logo-sub">六本松店 | Stretch &amp; Seitai</div>
-      </div>
+<header id="fixed-topbar" class="fixed-topbar scrolled">
+  <div class="topbar-left">
+    <a href="../index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <img src="../images/logo.png" alt="からだととのうラボ" style="height:44px;width:auto;">
+      <img src="../images/logo2.png" alt="からだととのうラボ 六本松店" style="height:32px;width:auto;">
     </a>
-    <nav class="header-nav">
-      <a href="/#troubles">お悩み</a>
-      <a href="/#features">特徴</a>
-      <a href="/#menu">メニュー</a>
-      <a href="/#staff">スタッフ</a>
-      <a href="/#access">アクセス</a>
-      <a href="/blog/" style="color:var(--primary);">ブログ</a>
-    </nav>
-    <div class="header-reserve">
-      <a href="/#reserve" class="btn btn-primary">ご予約</a>
-    </div>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
+  </div>
+  <div class="topbar-right">
+    <a href="https://beauty.hotpepper.jp/kr/slnH000606130/" target="_blank" rel="noopener" class="topbar-reserve-btn">ご予約はこちら <span class="topbar-reserve-arrow">→</span></a>
   </div>
 </header>
 
-<div class="sp-menu" id="sp-menu">
-  <button class="sp-close" id="sp-close">×</button>
-  <a href="/#troubles" class="sp-link">お悩みの方へ</a>
-  <a href="/#features" class="sp-link">当店の特徴</a>
-  <a href="/#menu" class="sp-link">メニュー・料金</a>
-  <a href="/#staff" class="sp-link">スタッフ紹介</a>
-  <a href="/#reviews" class="sp-link">お客様の声</a>
-  <a href="/#access" class="sp-link">アクセス・営業時間</a>
-  <a href="/blog/" class="sp-link">ブログ</a>
-  <div class="sp-menu-btns">
-    <a href="https://beauty.hotpepper.jp/kr/slnH000606130/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="justify-content:center;">ホットペッパーで予約</a>
+<button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<nav id="sp-menu" class="drawer-menu" aria-hidden="true">
+  <div class="drawer-inner">
+    <nav class="drawer-nav">
+      <a href="../index.html" class="drawer-link"><span class="drawer-en">Home</span><span class="drawer-ja">トップ</span></a>
+      <a href="../index.html#features" class="drawer-link"><span class="drawer-en">Features</span><span class="drawer-ja">特徴</span></a>
+      <a href="../index.html#menu" class="drawer-link"><span class="drawer-en">Menu</span><span class="drawer-ja">メニュー</span></a>
+      <a href="../index.html#staff" class="drawer-link"><span class="drawer-en">Staff</span><span class="drawer-ja">スタッフ</span></a>
+      <a href="./index.html" class="drawer-link"><span class="drawer-en">Blog</span><span class="drawer-ja">ブログ</span></a>
+      <a href="../index.html#access" class="drawer-link"><span class="drawer-en">Access</span><span class="drawer-ja">アクセス</span></a>
+    </nav>
   </div>
+</nav>
+<div class="drawer-overlay" id="drawer-overlay"></div>
+
+<div class="blog-page-hero">
+  <span class="section-en">BLOG</span>
+  <h1 class="section-ja">スタッフブログ</h1>
+  <p class="section-desc">施術や健康に関する情報、サロンのお知らせをお届けします。</p>
 </div>
 
-<div class="blog-hero">
-  <div class="container">
-    <span class="section-label">STAFF BLOG</span>
-    <h1 class="section-title">スタッフブログ</h1>
-  </div>
+<div class="blog-page-main">
+  <div class="blog-all-grid" id="blogList"></div>
+  <p id="blogStatus" style="text-align:center;margin-top:16px;color:var(--text-light);"></p>
 </div>
 
-<div class="blog-main">
-  <div class="container">
-    <div class="blog-list" id="blog-list">
-      <div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-light);">読み込み中...</div>
+<footer class="site-footer">
+  <div class="footer-inner-wrap">
+    <div class="footer-logo-area">
+      <img src="../images/logo.png" alt="からだととのうラボ" style="height:56px;width:auto;margin-bottom:8px;">
+      <p class="footer-name">からだととのうラボ 六本松店</p>
+    </div>
+    <div class="footer-info-area">
+      <p>〒810-0044 福岡市中央区六本松４－９－７</p>
+      <p>七隈線 六本松駅 徒歩2分</p>
+      <p>平日 11:00〜22:00 / 土日祝 10:00〜21:00</p>
+    </div>
+    <div class="footer-nav-area">
+      <a href="../index.html">トップページ</a>
+      <a href="../index.html#menu">メニュー・料金</a>
+      <a href="../index.html#access">アクセス</a>
+      <a href="./index.html">ブログ</a>
     </div>
   </div>
-</div>
-
-<footer id="site-footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo">
-          <div class="logo-mark" style="border-color:#5aabcc;">
-            <svg viewBox="0 0 24 24" style="fill:#5aabcc;">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 2.74 1.53 5.12 3.78 6.39L8 21h8l-.78-5.61C17.47 14.12 19 11.74 19 9c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z"/>
-            </svg>
-          </div>
-          <div class="logo-text">
-            <div class="logo-name">からだととのうラボ</div>
-            <div class="logo-sub">六本松店</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">MENU</div>
-        <div class="footer-links">
-          <a href="/">トップページ</a>
-          <a href="/#menu">メニュー・料金</a>
-          <a href="/#access">アクセス</a>
-          <a href="/blog/">ブログ</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">INFO</div>
-        <div class="footer-info">
-          <div>福岡市中央区六本松４－９－７</div>
-          <div>七隈線 六本松駅 徒歩2分</div>
-          <div>平日 11:00〜22:00 / 土日祝 10:00〜21:00</div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 からだととのうラボ 六本松店. All rights reserved.</p>
-    </div>
-  </div>
+  <div class="footer-copy">&copy; 2026 からだととのうラボ 六本松店</div>
 </footer>
 
-<button id="page-top" aria-label="ページトップへ">↑</button>
+<button id="page-top" aria-label="ページトップへ戻る">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l10 16H2z"/></svg>
+</button>
 
+<script src="../common.js"></script>
 <script>
-function esc(str) {
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+(async () => {
+  const listEl   = document.getElementById('blogList');
+  const statusEl = document.getElementById('blogStatus');
 
-document.addEventListener('DOMContentLoaded', () => {
-  // header scroll
-  window.addEventListener('scroll', () => {
-    document.getElementById('site-header')?.classList.toggle('scrolled', window.scrollY > 40);
-    document.getElementById('page-top')?.classList.toggle('visible', window.scrollY > 300);
-  });
-  document.getElementById('page-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  document.getElementById('hamburger')?.addEventListener('click', () => document.getElementById('sp-menu')?.classList.add('open'));
-  document.getElementById('sp-close')?.addEventListener('click', () => document.getElementById('sp-menu')?.classList.remove('open'));
-  document.querySelectorAll('.sp-link').forEach(l => l.addEventListener('click', () => document.getElementById('sp-menu')?.classList.remove('open')));
+  function esc(s) {
+    return String(s ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+  }
+  function fmtDate(d) {
+    const m = String(d || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return m ? `${m[1]}.${m[2]}.${m[3]}` : esc(d || '');
+  }
 
-  // load posts
-  fetch('/blog/posts.json')
-    .then(r => r.json())
-    .then(data => {
-      const posts = data.posts || [];
-      const list = document.getElementById('blog-list');
-      if (posts.length === 0) {
-        list.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-light);">まだ記事がありません</div>';
-        return;
-      }
-      list.innerHTML = posts.slice().reverse().map(p => {
-        const imgSrc = p.image ? p.image.replace(/^\.\//, '/').replace(/^\/images\//, '/images/') : '';
-        const imgEl = imgSrc
-          ? `<img src="${imgSrc}" alt="${esc(p.title)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;">`
-          : `<div class="blog-card-img">📝</div>`;
-        return `
-          <a href="/blog/posts/post.html?slug=${esc(p.slug)}" class="blog-card">
-            ${imgEl}
-            <div class="blog-card-body">
-              <div class="blog-card-date">${esc(p.date || '')}</div>
-              <div class="blog-card-title">${esc(p.title)}</div>
-              <div class="blog-card-excerpt">${esc(p.excerpt || '')}</div>
-            </div>
-          </a>`;
-      }).join('');
-    })
-    .catch(() => {
-      document.getElementById('blog-list').innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-light);">記事を準備中です</div>';
-    });
-});
+  try {
+    if (statusEl) statusEl.textContent = '読み込み中…';
+
+    const res = await fetch('./posts.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('posts.jsonが読み込めません（' + res.status + '）');
+    const posts = (await res.json()).posts;
+    if (!Array.isArray(posts)) throw new Error('posts.jsonの形式が不正です');
+
+    posts.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+
+    if (posts.length === 0) {
+      if (statusEl) statusEl.textContent = 'まだ記事がありません。';
+      return;
+    }
+
+    listEl.innerHTML = posts.map(p => {
+      const href = `./posts/post.html?slug=${encodeURIComponent(p.slug)}`;
+      const imgSrc = p.image ? '../' + p.image : '';
+      const imgEl = imgSrc
+        ? `<img src="${esc(imgSrc)}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
+        : `<div class="blog-card-img" style="background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:40px;aspect-ratio:16/10;">📝</div>`;
+      return `<a href="${href}" class="blog-card">
+        ${imgEl}
+        <div class="blog-card-body">
+          <div class="blog-card-date">${fmtDate(p.date)}</div>
+          <div class="blog-card-title">${esc(p.title)}</div>
+          <div class="blog-card-excerpt">${esc(p.excerpt || '')}</div>
+        </div>
+      </a>`;
+    }).join('');
+
+    if (statusEl) statusEl.textContent = '';
+
+  } catch(e) {
+    if (statusEl) statusEl.textContent = 'エラー：' + (e?.message || e);
+    console.error(e);
+  }
+})();
 </script>
 </body>
 </html>
