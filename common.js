@@ -65,7 +65,7 @@ function loadBlogPreview() {
   const list = document.getElementById('blog-list');
   if (!list) return;
 
-  fetch('/blog/posts.json')
+  fetch('blog/posts.json')
     .then(r => r.json())
     .then(data => {
       const posts = (data.posts || []).slice(0, 3);
@@ -75,13 +75,13 @@ function loadBlogPreview() {
       }
       list.innerHTML = posts.map(p => {
         const imgSrc = p.image
-          ? p.image.replace(/^\.\//, '/').replace(/^\/images\//, '/images/')
+          ? p.image.replace(/^\.\.\/\.\.\//, '')
           : '';
         const imgEl = imgSrc
           ? `<img src="${imgSrc}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
           : `<div class="blog-card-img">📝</div>`;
         return `
-          <a href="/blog/posts/post.html?slug=${esc(p.slug)}" class="blog-card">
+          <a href="blog/posts/post.html?slug=${esc(p.slug)}" class="blog-card">
             ${imgEl}
             <div class="blog-card-body">
               <div class="blog-card-date">${esc(p.date || '')}</div>
