@@ -580,7 +580,9 @@ ul { list-style: none; }
   box-shadow: 0 2px 10px rgba(0,0,0,0.15);
   transition: var(--transition);
   text-decoration: none;
+  opacity: 0; visibility: hidden;
 }
+#line-float-btn.visible { opacity: 1; visibility: visible; }
 #line-float-btn:hover { background: #05a848; transform: scale(1.05); }
 .line-float-icon { display: flex; }
 .line-float-label { display: none; }

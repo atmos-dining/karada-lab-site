@@ -3,6 +3,9 @@ window.addEventListener('scroll', () => {
   const pageTop = document.getElementById('page-top');
   if (pageTop) pageTop.classList.toggle('visible', window.scrollY > 400);
 
+  const lineFloat = document.getElementById('line-float-btn');
+  if (lineFloat) lineFloat.classList.toggle('visible', window.scrollY > 400);
+
   const topbar = document.getElementById('fixed-topbar');
   if (topbar) topbar.classList.toggle('scrolled', window.scrollY > 60);
 });
