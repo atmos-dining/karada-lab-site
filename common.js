@@ -68,7 +68,10 @@ function loadBlogPreview() {
   fetch('blog/posts.json')
     .then(r => r.json())
     .then(data => {
-      const posts = (data.posts || []).slice(0, 3);
+      const posts = (data.posts || [])
+        .slice()
+        .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
+        .slice(0, 3);
       if (posts.length === 0) {
         list.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:var(--text-light);padding:40px;">まだ記事がありません</div>';
         return;
