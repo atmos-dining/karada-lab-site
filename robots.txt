@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://karada-lab-site/sitemap.xml
+Sitemap: https://karada-totonou-lab.com/sitemap.xml
