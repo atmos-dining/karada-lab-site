@@ -5,7 +5,18 @@
 <title>ブログ｜からだととのうラボ 六本松店</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="からだととのうラボ 六本松店のブログ記事。">
+<link rel="canonical" id="canonical-link" href="https://karada-totonou-lab.com/blog/">
 <link rel="icon" href="../../images/favicon2.png">
+
+<!-- OGP -->
+<meta property="og:type" content="article">
+<meta property="og:title" id="og-title" content="ブログ｜からだととのうラボ 六本松店">
+<meta property="og:description" id="og-description" content="からだととのうラボ 六本松店のブログ記事。">
+<meta property="og:url" id="og-url" content="https://karada-totonou-lab.com/blog/">
+<meta property="og:site_name" content="からだととのうラボ 六本松店">
+<meta property="og:image" id="og-image" content="https://karada-totonou-lab.com/images/hero1.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
@@ -233,8 +244,17 @@
     const post = posts.find(p => p.slug === slug);
     if (!post) throw new Error('記事が見つかりません: ' + slug);
 
-    document.title = `${post.title}｜からだととのうラボ 六本松店`;
+    const pageTitle = `${post.title}｜からだととのうラボ 六本松店`;
+    const pageUrl = `https://karada-totonou-lab.com/blog/posts/post.html?slug=${encodeURIComponent(slug)}`;
+    const ogImg = post.image ? `https://karada-totonou-lab.com/${post.image}` : 'https://karada-totonou-lab.com/images/hero1.jpg';
+
+    document.title = pageTitle;
     document.querySelector('meta[name="description"]')?.setAttribute('content', post.excerpt || '');
+    document.getElementById('canonical-link')?.setAttribute('href', pageUrl);
+    document.getElementById('og-title')?.setAttribute('content', pageTitle);
+    document.getElementById('og-description')?.setAttribute('content', post.excerpt || '');
+    document.getElementById('og-url')?.setAttribute('content', pageUrl);
+    document.getElementById('og-image')?.setAttribute('content', ogImg);
     if (bcTitle) bcTitle.textContent = post.title;
 
     const imgSrc = post.image ? '../../' + post.image : '';
