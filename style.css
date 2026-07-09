@@ -568,6 +568,23 @@ ul { list-style: none; }
 #page-top.visible { opacity: 1; visibility: visible; }
 #page-top:hover { background: var(--primary-dark); }
 
+#line-float-btn {
+  position: fixed;
+  bottom: 74px; right: 20px;
+  width: 46px; height: 46px;
+  background: #06C755;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 9001;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: var(--transition);
+  text-decoration: none;
+}
+#line-float-btn:hover { background: #05a848; transform: scale(1.05); }
+.line-float-icon { display: flex; }
+.line-float-label { display: none; }
+
 /* ===========================
    CONTENT SECTIONS
 =========================== */
