@@ -1062,7 +1062,7 @@ textarea.form-control { resize: vertical; min-height: 90px; }
   /* その他グリッド系 */
   .features-wrap { grid-template-columns: 1fr; }
   .feature-item { border: none; }
-  .btn-primary-more { font-size: 17px; padding: 16px 40px; }
+  .btn-primary-more { font-size: 17px; padding: 16px 24px; white-space: nowrap; }
   .troubles-grid { grid-template-columns: 1fr 1fr; }
   .staff-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
