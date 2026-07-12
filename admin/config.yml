@@ -18,6 +18,7 @@ collections:
           - name: posts
             label: Posts
             widget: list
+            add_to_top: true
             fields:
               - {name: slug,    label: Slug,    widget: string}
               - {name: title,   label: Title,   widget: string}
