@@ -113,7 +113,7 @@ function initGA4Tracking() {
     const href = a.getAttribute('href') || '';
 
     if (href.startsWith('tel:')) {
-      gtag('event', 'phone_click', {
+      gtag('event', 'click_tel', {
         event_category: 'contact',
         event_label: href.replace('tel:', ''),
         page_location: location.href
@@ -121,7 +121,7 @@ function initGA4Tracking() {
     }
 
     if (href.includes('hotpepper')) {
-      gtag('event', 'reservation_click', {
+      gtag('event', 'click_reserve', {
         event_category: 'conversion',
         event_label: a.textContent.trim().slice(0, 50),
         page_location: location.href
