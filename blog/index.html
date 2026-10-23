@@ -50,6 +50,7 @@
   gtag('js', new Date());
   gtag('config', 'G-XFP9FGWCJG');
 </script>
+<script src="../vendor/blog-security.js"></script>
 </head>
 <body>
 
@@ -162,7 +163,7 @@
       const href = `./posts/post.html?slug=${encodeURIComponent(p.slug)}`;
       const imgSrc = p.image ? '../' + p.image : '';
       const imgEl = imgSrc
-        ? `<img src="${esc(imgSrc)}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
+        ? `<img src="${esc(BlogSecurity.imageURL(imgSrc))}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
         : `<div class="blog-card-img" style="background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:40px;aspect-ratio:16/10;">📝</div>`;
       return `<a href="${href}" class="blog-card">
         ${imgEl}

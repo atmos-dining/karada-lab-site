@@ -82,10 +82,10 @@ function loadBlogPreview() {
       list.innerHTML = posts.map(p => {
         const imgSrc = p.image || '';
         const imgEl = imgSrc
-          ? `<img src="${imgSrc}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
+          ? `<img src="${esc(BlogSecurity.imageURL(imgSrc))}" alt="${esc(p.title)}" class="blog-card-img" style="aspect-ratio:16/10;object-fit:cover;">`
           : `<div class="blog-card-img">📝</div>`;
         return `
-          <a href="blog/posts/post.html?slug=${esc(p.slug)}" class="blog-card">
+          <a href="blog/posts/post.html?slug=${encodeURIComponent(p.slug)}" class="blog-card">
             ${imgEl}
             <div class="blog-card-body">
               <div class="blog-card-date">${esc(p.date || '')}</div>
